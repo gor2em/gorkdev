@@ -1,12 +1,15 @@
+import Link from "next/link";
 
-export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+import getPostMetaData from "@/components/getPostMetaData";
+import PostPreview from "@/components/PostPreview";
 
-      <div className="font-bold text-4xl">
-        gork.dev
-      </div>
+const HomePage = () => {
+  const postMetaData = getPostMetaData();
+  const postPreviews = postMetaData.map((post) => (
+    <PostPreview key={post.slug} {...post} />
+  ));
 
-    </main>
-  )
-}
+  return <div>{postPreviews}</div>;
+};
+
+export default HomePage;
