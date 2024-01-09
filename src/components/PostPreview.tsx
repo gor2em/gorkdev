@@ -9,7 +9,13 @@ const PostPreview = (props: PostMetadata) => {
         <h2>{props.title}</h2>
       </Link>
       <p className="text-xs text-main600">{props.subtitle}</p>
-      <p className="text-[10px] text-main800">{props.date}</p>
+      <div className="flex items-center space-x-2 text-[10px]">
+
+
+        {props.category && <div className="text-primary400">{props.category}</div>}
+
+        <p className="text-main800">{props.date}</p>
+      </div>
     </div>
   );
 };

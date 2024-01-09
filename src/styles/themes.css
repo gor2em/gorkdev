@@ -11,6 +11,7 @@ html[data-theme="white"] {
   --main-900: #e7e7e7;
   --main-950: #f6f6f6;
 
+  --primary: #ffffff;
   --primary-50: #edfff1;
   --primary-100: #d5ffe0;
   --primary-200: #aeffc3;
@@ -22,4 +23,6 @@ html[data-theme="white"] {
   --primary-800: #047723;
   --primary-900: #06611f;
   --primary-950: #00370e;
+
+  --secondary: #cbf751;
 }
