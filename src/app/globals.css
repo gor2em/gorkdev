@@ -2,27 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  /* --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255; */
+@layer base {
+  html {
+    --main-50: #ffffff;
+    --main-100: #efefef;
+    --main-200: #dcdcdc;
+    --main-300: #bdbdbd;
+    --main-400: #989898;
+    --main-500: #7c7c7c;
+    --main-600: #656565;
+    --main-700: #525252;
+    --main-800: #464646;
+    --main-900: #3d3d3d;
+    --main-950: #292929;
+
+    --primary: #030019;
+    --primary-50: #edfff1;
+    --primary-100: #d5ffe0;
+    --primary-200: #aeffc3;
+    --primary-300: #6fff95;
+    --primary-400: #2eff62;
+    --primary-500: #00e939;
+    --primary-600: #00c22b;
+    --primary-700: #009825;
+    --primary-800: #047723;
+    --primary-900: #06611f;
+    --primary-950: #00370e;
+
+    --secondary: #cbf751;
+  }
+
+  body {
+    @apply h-full min-h-screen text-main50 bg-primary;
+  }
+
+  @import "../styles/themes.css";
 }
 
-@media (prefers-color-scheme: dark) {
-  /* :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  } */
-}
-
-body {
-  /* color: rgb(var(--foreground-rgb));
+/* body {
+  color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb)); */
-  @apply bg-slate-950 text-white min-h-screen h-full;
-}
+    rgb(var(--background-start-rgb));
+  @apply h-full min-h-screen text-white bg-slate-950;
+} */

@@ -1,0 +1,25 @@
+html[data-theme="white"] {
+  --main-50: #000000;
+  --main-100: #3d3d3d;
+  --main-200: #454545;
+  --main-300: #4f4f4f;
+  --main-400: #5d5d5d;
+  --main-500: #6d6d6d;
+  --main-600: #888888;
+  --main-700: #b0b0b0;
+  --main-800: #d1d1d1;
+  --main-900: #e7e7e7;
+  --main-950: #f6f6f6;
+
+  --primary-50: #edfff1;
+  --primary-100: #d5ffe0;
+  --primary-200: #aeffc3;
+  --primary-300: #6fff95;
+  --primary-400: #2eff62;
+  --primary-500: #00e939;
+  --primary-600: #00c22b;
+  --primary-700: #009825;
+  --primary-800: #047723;
+  --primary-900: #06611f;
+  --primary-950: #00370e;
+}
