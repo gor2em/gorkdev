@@ -18,11 +18,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head />
       <body className={inter.className}>
         <Header />
 
-        <div className="container w-full p-8 mx-auto rounded">
+        <div className="container block w-full p-8 mx-auto">
           {children}
         </div>
       </body>
