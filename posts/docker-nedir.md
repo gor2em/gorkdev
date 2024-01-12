@@ -38,9 +38,11 @@ Docker imajlarının çalışan bir örneğidir. Container teknolojisi VM gereks
 Örnek olarak bir image veri tabanı, işletim sistemi ya da herhangi bir dile ait olabilir. Bunlardan dilediğimizi seçip kurabilir ve yönetebiliriz.
 
 Örneğin ben kendi bilgisayarıma postgres kurmak istiyorum. Bunun için bizlere bazı docker komutları ve docker in bilgisayarımızda kurulu olması gerekiyor.
+
 ```bash
 docker pull postgres
 ```
+
 diyerek postgres imajını çekerek bir container oluşturup kullanabilir ve yönetebiliriz. Uygulamalı örneklere bir sonraki yazıda daha detaylı geliyor olacağız.
  
 Aşağıdaki linkte daha fazla imaj listesi mevcut.
