@@ -4,7 +4,7 @@ import { PostMetadata } from "./PostMetadata";
 
 const PostPreview = (props: PostMetadata) => {
   return (
-    <div className="py-4 border-b border-main950 last:border-none">
+    <div className="py-4 border-b first:pt-0 border-main950 last:border-none">
       <Link href={`/posts/${props.slug}`} className="text-3xl font-bold">
         <h2>{props.title}</h2>
       </Link>

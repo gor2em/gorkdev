@@ -1,15 +1,11 @@
-import Link from "next/link";
-
-import getPostMetaData from "@/components/getPostMetaData";
-import PostPreview from "@/components/PostPreview";
-
 const HomePage = () => {
-  const postMetaData = getPostMetaData();
-  const postPreviews = postMetaData.map((post) => (
-    <PostPreview key={post.slug} {...post} />
-  ));
-
-  return <div>{postPreviews}</div>;
+  return (
+    <div>
+      <h1 className="text-xs ">
+          merhaba, şu anlık bu kadar.
+      </h1>
+    </div>
+  );
 };
 
 export default HomePage;

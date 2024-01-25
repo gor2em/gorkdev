@@ -1,5 +1,6 @@
+"use client"
 import { useState } from "react";
-import { FaMoon, FaSun } from "react-icons/fa";
+import { GoMoon, GoSun } from "react-icons/go";
 
 const Theme = () => {
     const [theme, setTheme] = useState(true);
@@ -10,8 +11,8 @@ const Theme = () => {
     };
 
     return (
-        <div className="cursor-pointer" onClick={toggleTheme}>
-            {!theme ? <FaMoon /> : <FaSun />}
+        <div className="cursor-pointer text-main400" onClick={toggleTheme}>
+            {!theme ? <GoMoon /> : <GoSun />}
         </div>
     )
 }
