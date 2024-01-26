@@ -9,8 +9,7 @@ export const metadata: Metadata = {
   description: "welcome to gork.dev",
 };
 
-import Header from "./header";
-import Sidebar from "@/components/Sidebar";
+import Navbar from "@/components/Navbar";
 
 export default function RootLayout({
   children,
@@ -20,13 +19,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={montserrat.className}>
-        {/* <Header /> */}
 
-        <div className="container w-full px-8 py-8 mx-auto md:px-0">
+        <div className="container w-full px-8 pt-0 pt-4 pb-24 mx-auto md:px-0">
           {children}
         </div>
 
-        <Sidebar />
+        <Navbar />
 
       </body>
     </html>
