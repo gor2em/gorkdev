@@ -11,7 +11,7 @@ const Theme = () => {
     };
 
     return (
-        <div className="cursor-pointer text-main400" onClick={toggleTheme}>
+        <div className="cursor-pointer text-primary700" onClick={toggleTheme}>
             {!theme ? <GoMoon /> : <GoSun />}
         </div>
     )

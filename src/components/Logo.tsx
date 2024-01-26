@@ -14,13 +14,9 @@ const Logo = (props: Logo) => {
   return (
     <Link
       href="/"
-      className={`${orbitron.className} ${
-        props.path === "/"
-          ? "bg-primary500 text-primary900"
-          : "bg-main50 text-main950"
-      }  font-extrabold rounded p-1`}
+      className={`${orbitron.className} text-primary950  font-extrabold`}
     >
-      gd
+      gork.dev
     </Link>
   );
 };
