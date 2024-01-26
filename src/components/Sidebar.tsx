@@ -12,7 +12,7 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <div className="fixed md:left-14 bottom-4 md:top-2.5 w-full">
+    <div className="fixed md:left-14 bottom-4 md:top-2.5 w-full md:w-auto">
       <div className="flex items-center justify-center md:justify-start">
         <div className="flex items-center justify-center px-6 py-4 space-x-6 rounded-lg backdrop-blur-lg md:space-y-6 md:space-x-0 md:flex-col bg-gradient-to-b to-main950 text-main600">
           <Logo path={pathname} />
