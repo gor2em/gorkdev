@@ -14,10 +14,11 @@ const Navbar = () => {
   return (
     <div className="fixed w-full bottom-4">
       <div className="flex items-center justify-center">
-        <div className="flex items-center p-4 space-x-6 rounded backdrop-blur-sm bg-gradient-to-b to-main950 text-main600 bg-indigo-600/50">
+        <div className="flex items-center space-x-4 backdrop-blur-sm text-main600 ">
           <Logo path={pathname} />
+          <Theme />
 
-          <div className="flex items-center space-x-4 ">
+          {/* <div className="flex items-center space-x-4 ">
             {sideList.map(({ icon, path, isActive }, index) => {
               {
                 const CurrentIcon = icon;
@@ -43,8 +44,7 @@ const Navbar = () => {
                 }
               }
             })}
-            {/* <Theme /> */}
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

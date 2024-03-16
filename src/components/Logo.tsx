@@ -14,7 +14,7 @@ const Logo = (props: Logo) => {
   return (
     <Link
       href="/"
-      className={`${orbitron.className} text-primary50`}
+      className={`${orbitron.className} text-main50`}
     >
       gork.dev
     </Link>

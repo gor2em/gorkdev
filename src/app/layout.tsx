@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Montserrat, Orbitron } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
@@ -19,13 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={montserrat.className}>
-
-        <div className="container w-full px-8 pt-0 pt-4 pb-24 mx-auto md:px-0">
-          {children}
+        <div className="max-w-xl mx-auto w-full">
+          <div className="p-8 flex flex-col space-y-8">{children}</div>
         </div>
 
-        <Navbar />
-
+        {/* <Navbar /> */}
       </body>
     </html>
   );
