@@ -9,7 +9,8 @@ export const metadata: Metadata = {
   description: "welcome to gork.dev",
 };
 
-import Navbar from "@/components/Navbar";
+import Sidebar from "@/components/Sidebar";
+import Footer from "./footer";
 
 export default function RootLayout({
   children,
@@ -19,14 +20,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={montserrat.className}>
-        <div className="max-w-xl mx-auto w-full p-8">
-          <div className="flex flex-col space-y-8">
-            {children}
+        <div className="w-full max-w-xl mx-auto">
+          <div className="relative">
+            <Sidebar />
 
-            <div className="text-[10px] pointer-events-none select-none tracking-widest text-main500 font-thin">
-              <div>gork.dev 2024</div>
-              <div>glory was here</div>
-              <div>created with next.js & powered by vercel</div>
+            <div className="flex flex-col px-8 pt-12 space-y-8 md:pt-8">
+              {children}
+
+              <Footer />
             </div>
           </div>
         </div>
