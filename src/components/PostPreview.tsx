@@ -12,7 +12,7 @@ const PostPreview = (props: PostMetadata) => {
         <h2>{props.title}</h2>
       </Link>
       {props.category && (
-        <div className="text-primary400 font-thin text-[10px]">
+        <div className="text-primary400 text-[9px]">
           {props.category}
         </div>
       )}

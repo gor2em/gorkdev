@@ -19,11 +19,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={montserrat.className}>
-        <div className="max-w-xl mx-auto w-full">
-          <div className="p-8 flex flex-col space-y-8">{children}</div>
-        </div>
+        <div className="max-w-xl mx-auto w-full p-8">
+          <div className="flex flex-col space-y-8">
+            {children}
 
-        {/* <Navbar /> */}
+            <div className="text-[10px] pointer-events-none select-none tracking-widest text-main500 font-thin">
+              <div>gork.dev 2024</div>
+              <div>glory was here</div>
+              <div>created with next.js & powered by vercel</div>
+            </div>
+          </div>
+        </div>
       </body>
     </html>
   );
