@@ -20,7 +20,7 @@ Kendi dizininizde ilgili paketi kurabilir ve yönetebilirsiniz.
 Eğer her şeyi sorunsuz yaptıysak, kuyruk oluşturma anında arguments eklemeli ve headers içerisinde bu veriyi göndermeliyiz ki ayrıştırma yapılabilsin.
 
 
-![rabbitmq-deduplication-arguments](https://github.com/gor2em/gorkdev.md/blob/master/posts/be/rabbitmq/images/queue.png)
+![rabbitmq-deduplication-arguments](https://raw.githubusercontent.com/gor2em/gorkdev.md/master/posts/be/rabbitmq/images/queue.png)
 
 **x-message-deduplication** özelliğini kuyruk özelinde true yaparak aktifleştirmiş oluyoruz.
 
@@ -38,11 +38,10 @@ Eğer her şeyi sorunsuz yaptıysak, kuyruk oluşturma anında arguments eklemel
 		},
 	); err != nil {
 		return err
-	}
-  ```
+	}```
 
 Kod örneğinde is header içerisinde bize gelen id değerini header de set ediyoruz ve bu şekilde kuyruklara aktarım sağlıyoruz.
 
-![rabbitmq-deduplication-header](https://github.com/gor2em/gorkdev.md/blob/master/posts/be/rabbitmq/images/deduplication.png)
+![rabbitmq-deduplication-header](https://raw.githubusercontent.com/gor2em/gorkdev.md/master/posts/be/rabbitmq/images/deduplication.png)
 
 Sevgilerle.
