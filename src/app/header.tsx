@@ -14,7 +14,7 @@ export default function Header() {
       <div className="flex items-center space-x-4">
         <div className="w-12 h-12 relative">
           <img
-            src="https://pbs.twimg.com/profile_images/1763034678691328000/tS8RK05W_400x400.jpg"
+            src="https://pbs.twimg.com/profile_images/1779497280153739264/B9PqPjai_400x400.jpg"
             className="w-full h-full rounded-full absolute"
             alt="Profile"
           />
