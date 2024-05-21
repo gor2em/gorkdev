@@ -1,12 +1,12 @@
 "use client";
-import Link from "next/link";
+// import Link from "next/link";
 
-import {
-  RiTwitterXLine,
-  RiGithubLine,
-  RiYoutubeLine,
-  RiSpotifyLine,
-} from "react-icons/ri";
+// import {
+//   RiTwitterXLine,
+//   RiGithubLine,
+//   RiYoutubeLine,
+//   RiSpotifyLine,
+// } from "react-icons/ri";
 
 export default function Header() {
   return (
@@ -28,12 +28,12 @@ export default function Header() {
         </div>
       </div>
 
-      <div className="sm:flex items-center space-x-2 text-xl text-main600 hidden">
+      {/* <div className="sm:flex items-center space-x-2 text-xl text-main600 hidden">
         <RiGithubLine className="hover:cursor-pointer hover:text-main200 transition-all ease-linear duration-300" />
         <RiYoutubeLine className="hover:cursor-pointer hover:text-main200 transition-all ease-linear duration-300" />
         <RiSpotifyLine className="hover:cursor-pointer hover:text-main200 transition-all ease-linear duration-300" />
         <RiTwitterXLine className="hover:cursor-pointer hover:text-main200 transition-all ease-linear duration-300" />
-      </div>
+      </div> */}
     </header>
   );
 }

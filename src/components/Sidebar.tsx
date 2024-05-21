@@ -42,7 +42,7 @@ const Sidebar = () => {
               }
             }
           })}
-          <Theme />
+          {/* <Theme /> */}
         </div>
       </div>
     </div>
